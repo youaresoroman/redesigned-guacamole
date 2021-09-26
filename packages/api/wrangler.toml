@@ -1,0 +1,11 @@
+name = "redisigned-giacomole-api"
+type = "javascript"
+zone_id = "d634655df7d16de4b2bc113def6d7ad4"
+account_id = "2c2b93a8cc4f5600280065f0313ead4c"
+route = ""
+workers_dev = true
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"

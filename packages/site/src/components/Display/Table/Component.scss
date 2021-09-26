@@ -1,0 +1,17 @@
+@import "../../../styles/variables";
+
+.accounts-table {
+
+    // overflow-y: auto;
+    // overflow-x: hidden;
+    @media #{$tablet} {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    &.skeleton {
+        opacity: 0.4;
+        user-select: none;
+        cursor: wait;
+    }
+}

@@ -1,0 +1,34 @@
+@import "../../../styles/variables";
+
+$size: 7rem;
+
+.user-bar {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+
+  @media #{$tablet} {
+    padding: 2.5rem;
+  }
+
+  .avatar {
+    border-radius: 50%;
+    height: $size;
+    width: $size;
+    background-size: cover;
+  }
+
+  .greeting {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    display: grid;
+    align-content: end;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+
+    @media #{$tablet} {
+      font-size: 2rem;
+    }
+  }
+}

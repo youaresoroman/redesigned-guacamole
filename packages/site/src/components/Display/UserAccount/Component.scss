@@ -1,0 +1,41 @@
+@import "../../../styles/variables";
+
+.account {
+  min-width: 164px;
+  min-height: 136px;
+  max-width: 164px;
+  max-height: 136px;
+  background-color: $account;
+  border-radius: 2em;
+  color: white;
+  padding: 2rem;
+  margin-right: 1rem;
+  font-weight: 600;
+  word-break: break-word;
+
+  @media #{$tablet} {
+    margin-right: 2rem;
+  }
+
+  &.skeleton {
+    background-color: gray;
+    user-select: none;
+    cursor: wait;
+    animation: opacityPulse 2s ease-in-out infinite;
+    animation-delay: 0.5s;
+  }
+}
+
+@keyframes opacityPulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

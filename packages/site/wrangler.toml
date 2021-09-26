@@ -1,0 +1,6 @@
+account_id = "2c2b93a8cc4f5600280065f0313ead4c"
+name = "redisigned-guacomole"
+type = "webpack"
+workers_dev = true
+site = { bucket = "./build" }
+compatibility_date = "2021-09-23"
